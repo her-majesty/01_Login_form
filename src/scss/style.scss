@@ -1,0 +1,145 @@
+@import 'normalize';
+
+$blueColor: #3366ff;
+$darken: darken($blueColor, 10%);
+
+body {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    color:white;
+}
+
+h2 {
+    font-size:22px;
+    font-weight:600;
+    text-transform:uppercase;
+    margin:auto;
+    text-align: center;
+}
+
+.form-wrapper {
+    width: 680px;
+    height: 480px;
+    background-color: grey;
+    display:flex;
+    justify-content:space-between;
+    box-sizing:border-box;
+    box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.4);
+
+    
+} 
+
+.login-form {
+    width: 48%;
+    height:100%;
+    background-color: #fff;
+    box-shadow: -5px 5px 10px 0px rgba(0,0,0,0.4);
+}
+.lg-name {
+    margin-top:40px;
+    background-color: $blueColor;
+    height:95px;
+    margin-right:40px;
+    margin-left:-5px;
+    position:relative;
+
+    .corner-square {
+        height:20px;
+        width:20px;
+        position: absolute;
+        bottom:0;
+        right:0;
+        background: linear-gradient(-45deg, white 0%, white 50%, $darken 50%, $darken 50%);
+
+    }
+
+    &:before {
+        content:'';
+        height:5px;
+        width: 5px;
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: 0px;
+        background: linear-gradient(-45deg, $blueColor 0%,$blueColor 50%, transparent 50%, transparent 50%);
+    }
+
+    &:after {
+    bottom: 0px;
+    content:'';
+    height:5px;
+    width: 5px;
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom:-5px;
+    background: linear-gradient(45deg, transparent 0%, transparent 50%, $blueColor 50%, $blueColor 50%);
+
+    }
+    & > h2 {
+    line-height:95px;
+    }
+}
+
+.form {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    margin-top:40px;
+    padding: 0px 40px;
+    box-sizing:border-box;
+
+}
+.input-field {
+    height:50px;
+    margin-bottom:20px;
+    padding-left:20px;
+
+    &:focus {
+    outline: 1px solid $blueColor;
+    }
+}
+.btn {
+    font-family: Raleway;
+    font-size:14px;
+    font-weight:600;
+    color:white;
+    background-color: $blueColor;
+    text-transform: uppercase;
+    outline: none;
+    border:none;
+}
+.comment {
+    color:#989898;
+    padding: 0px 40px;
+    font-family: Roboto;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding-top:30px;
+    a {
+        color:#3b2fff;
+        text-decoration: none;
+    }
+
+}
+.register-form {
+width:55%;
+background-color: $blueColor;
+height: 100%;
+box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+
+& .form {
+    margin-top:20px;
+
+    & .btn {
+        background-color: #4c79ff;
+    }
+}
+}
+.rg-name {
+    margin-top:40px;
+}
