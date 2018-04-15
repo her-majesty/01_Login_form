@@ -427,12 +427,14 @@ h2 {
   margin-left: -5px;
   position: relative; }
   .lg-name .corner-square {
-    height: 20px;
-    width: 20px;
+    height: 0px;
+    width: 0px;
+    border: 10px solid #0040ff;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
     position: absolute;
     bottom: 0;
-    right: 0;
-    background: linear-gradient(-45deg, white 0%, white 50%, #0040ff 50%, #0040ff 50%); }
+    right: 0; }
   .lg-name:before {
     content: '';
     height: 5px;

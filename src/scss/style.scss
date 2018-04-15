@@ -47,12 +47,15 @@ h2 {
     position:relative;
 
     .corner-square {
-        height:20px;
-        width:20px;
+        height:0px;
+        width:0px;
+        border: 10px solid $darken;
+        border-right: 10px solid white;
+        border-bottom: 10px solid white;
         position: absolute;
         bottom:0;
         right:0;
-        background: linear-gradient(-45deg, white 0%, white 50%, $darken 50%, $darken 50%);
+       // background: linear-gradient(-45deg, white 0%, white 50%, $darken 0%, $darken 50%);
 
     }
 
